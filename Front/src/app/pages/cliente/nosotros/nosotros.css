@@ -1,0 +1,140 @@
+/* Nosotros Page Styles */
+.page-header {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.page-header h1 {
+  margin-top: 120px;
+  margin-bottom: 60px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.page-header p {
+  color: #666;
+  font-size: 18px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.team-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.team-member {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+}
+
+.member-photo img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.team-member h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.team-member h3 {
+  color: #c67ac7;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.team-member p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.social-links a {
+  display: inline-block;
+  padding: 8px 16px;
+  background: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.social-links a:hover {
+  background: #c67ac7;
+}
+
+/* ==== Sección Dry (Fundadora) ==== */
+
+.dry-section {
+  /* Make the founder / spotlight blocks use the pale client pink background */
+  background: linear-gradient(135deg, #fff9fb 0%, #fdf0f4 45%, #f7e6eb 100%);
+  padding: 40px 0;
+  border-radius: 12px;
+}
+
+.dry-photo {
+    max-width: 260px;
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
+}
+
+/* Buttons in the founder / spotlight sections */
+.dry-section .btn {
+  border-radius: 999px;
+}
+
+.dry-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333333;
+}
+
+.dry-subtitle {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #c67ac7;
+}
+
+.dry-description {
+    color: #555555;
+    line-height: 1.7;
+}
+
+.dry-list {
+    margin-top: 10px;
+    padding-left: 1.2rem;
+    color: #444444;
+}
+
+.dry-list li {
+    margin-bottom: 6px;
+}
+
+.dry-quote {
+    margin-top: 12px;
+    font-style: italic;
+    color: #888888;
+    border-left: 4px solid #c67ac7;
+    padding-left: 12px;
+}

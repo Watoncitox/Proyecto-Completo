@@ -1,0 +1,13 @@
+/* src/app/components/Card/Card-Usuario/Card-Usuario.css */
+.card-usuario {
+  max-width: 420px;
+  margin: auto;
+}
+
+.card-usuario img {
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  margin: auto;
+}

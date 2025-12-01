@@ -1,0 +1,12 @@
+.client-theme {
+  /* Lighter / paler pink gradient for client pages */
+  background: linear-gradient(135deg, #fff9fb 0%, #fdf0f4 45%, #f7e6eb 100%);
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+}
+
+/* Ensure root content isn't covered and preserves padding */
+.client-theme .container,
+.client-theme .container-fluid {
+  z-index: 0;
+}

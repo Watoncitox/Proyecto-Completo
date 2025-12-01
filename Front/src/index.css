@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Admin view background (pastel violet) */
+.admin-bg {
+  background: linear-gradient(180deg, #efe6fb 0%, #f6efff 100%);
+  min-height: 100vh;
+}
+
+/* Ensure containers don't show default white background covering the page */
+.admin-bg .container,
+.admin-bg .main,
+.admin-bg main,
+.admin-bg .page-hero,
+.admin-bg .page-hero + .container {
+  background: transparent !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

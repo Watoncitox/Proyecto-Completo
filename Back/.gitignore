@@ -1,0 +1,133 @@
+###############################################
+#       BACK-END SPRING BOOT - SAFE MODE      #
+###############################################
+
+###############
+# BUILD FILES #
+###############
+# Maven target folder (compilaciones y .class)
+target/
+
+# Build de Spring Boot
+*.jar
+*.war
+*.ear
+
+# Archivos creados por Maven
+.mvn/wrapper/maven-wrapper.jar
+.mvn/wrapper/maven-wrapper.properties
+dependency-reduced-pom.xml
+
+#################
+# IDE SETTINGS  #
+#################
+
+# IntelliJ IDEA
+.idea/
+*.iml
+out/
+
+# Eclipse / Spring Tool Suite
+.project
+.classpath
+.settings/
+.springBeans
+
+# VSCode
+.vscode/
+
+#####################
+# SISTEMA OPERATIVO #
+#####################
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+########################
+# LOGS / TEMPORAL FILES
+########################
+
+logs/
+*.log
+*.tmp
+*.temp
+
+#########################
+# CONFIGURACIÓN SENSIBLE
+#########################
+
+# Application secrets
+application-local.properties
+application-dev.properties
+application-prod.properties
+application-test.properties
+
+# Firebase Config Keys
+src/main/resources/firebase/
+firebase-service-account.json
+*.json
+
+###############################
+# ARCHIVOS DE DEPLOY / DISTROS
+###############################
+*.zip
+*.tar.gz
+*.7z
+
+#####################
+# NODE / JAVASCRIPT #
+#####################
+node_modules/
+npm-debug.log
+yarn-error.log
+
+#####################
+# PYTHON OCCURRENCES #
+#####################
+__pycache__/
+*.pyc
+
+##################
+# SNAPSHOTS / AL #
+##################
+.alcache/
+.alpackages/
+.snapshots/
+.output/
+*.app
+rad.json
+*.g.xlf
+*.flf
+TestResults.xml
+
+########################
+# CUSTOM EXCLUSIONS    #
+########################
+
+# Evita subir archivos privados
+*.key
+*.pem
+*.p12
+*.crt
+*.csr
+
+# Evita subir backups
+*.bak
+*.old
+*.orig
+
+# Evita subir configuración de Git
+.gitconfig
+
+# ignorar build de Maven
+target/
+
+.git_backup/

@@ -1,0 +1,59 @@
+.hero-banner {
+  min-height: 320px;
+  width: 100%;
+  color: white;
+  border-radius: 1rem;
+  background-repeat: no-repeat;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(2px);
+  /* soft dark gradient overlay to fade video and emphasize text */
+  background: linear-gradient(180deg, rgba(0,0,0,0.28), rgba(0,0,0,0.52));
+  border-radius: inherit;
+  z-index: 1;
+}
+
+/* Video background fills the hero */
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.hero-banner h1,
+.hero-banner p,
+.hero-banner button {
+  position: relative;
+  z-index: 2;
+}
+
+/* Botón personalizado */
+.btn-custom {
+  background: linear-gradient(90deg, #c04cfb, #d06cfb);
+  border: none;
+  color: white;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-custom:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(208, 108, 251, 0.4);
+}
+
+/* Ensure any wrapper using .page-hero does not add extra top whitespace
+   when rendering the shared HeroBanner. Use !important to override
+   page-specific overrides that previously added header offsets. */
+.page-hero {
+  margin-top: 0 !important;
+  padding: 0 12px;
+}

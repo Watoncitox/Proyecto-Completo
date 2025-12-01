@@ -1,0 +1,18 @@
+/* src/app/components/Card/Card-Servicios/Card-Servicios.css */
+.card-servicio {
+  max-width: 340px;
+}
+
+.card-servicio img {
+  height: 220px;
+}
+
+.card-servicio .btn {
+  border-color: #dc3545;
+  color: #dc3545;
+}
+
+.card-servicio .btn:hover {
+  background-color: #dc3545;
+  color: #fff;
+}

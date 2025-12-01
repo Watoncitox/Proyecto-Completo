@@ -1,0 +1,18 @@
+/* src/app/components/Card/Global-Card/Global-Card.css */
+.global-card {
+  max-width: 360px;
+}
+
+.global-card img {
+  height: 240px;
+}
+
+.global-card .btn {
+  border-color: #000;
+  color: #000;
+}
+
+.global-card .btn:hover {
+  background-color: #000;
+  color: #fff;
+}

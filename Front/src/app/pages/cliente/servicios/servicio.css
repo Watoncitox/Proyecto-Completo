@@ -1,0 +1,73 @@
+
+.services-hero-section {
+    background-color: #fbe4e4; /* Un rosa muy suave, acorde a la belleza */
+    padding: 5rem 0 3rem 0;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+/* Tarjeta de Servicio */
+.service-card {
+    /* Asegura que la sombra y el padding se vean bien */
+    transition: transform 0.3s ease-in-out;
+    cursor: default;
+}
+
+.service-card:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Estilo para el ícono/emoji dentro de la tarjeta */
+.service-icon {
+    font-size: 3rem;
+    color: #ff69b4; /* Pink vibrante */
+}
+
+/* ESTILO DESTACADO: Para el nuevo servicio (id=5) */
+.service-card.new-service {
+    border: 2px solid #ff69b4; /* Borde rosa vibrante */
+    animation: pulse-border 2s infinite;
+}
+
+/* Animación para el borde pulsante */
+@keyframes pulse-border {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 105, 180, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(255, 105, 180, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 105, 180, 0);
+    }
+}
+
+/* Sección de Llamada a la Acción (CTA) */
+.services-cta-section {
+    background-color: #343a40; /* bg-dark de Bootstrap */
+    color: white;
+    text-align: center;
+    padding: 5rem;
+    margin-top: 5rem;
+}
+.servicios-container {
+    padding: 40px 0;
+}
+
+.servicio-card img {
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.servicios-subtitle {
+    font-size: 1.1rem;
+    color: #777;
+}
+
+@media (max-width: 768px) {
+    .servicios-title {
+        font-size: 1.8rem;
+    }
+}
+

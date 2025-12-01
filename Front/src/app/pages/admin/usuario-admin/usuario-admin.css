@@ -1,0 +1,13 @@
+.usuario-admin-page {
+  max-width: 980px;
+  margin: 0 auto;
+  padding-bottom: 3rem;
+}
+
+.usuario-admin-page h2 {
+  font-weight: 700;
+}
+
+.usuario-admin-page .options {
+  margin-top: 1rem;
+}

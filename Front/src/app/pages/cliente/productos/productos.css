@@ -1,0 +1,24 @@
+.background-gradient {
+  background: linear-gradient(135deg, #f7e6eb 100%, #f8c6c8 50%, #eab1c6 0%);
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+}
+
+/* Separador decorativo */
+.custom-separator {
+  width: 100%;
+  background: linear-gradient(90deg, #ffc0e6 60%, #ffaaf2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0 36px 0;
+  margin: 0 0 32px 0;
+}
+
+.separator-text {
+  font-family: "Dancing Script", "Segoe Script", cursive;
+  font-size: 3rem;
+  color: #b766d4;
+  opacity: 0.9;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15);
+}

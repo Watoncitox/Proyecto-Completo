@@ -1,0 +1,42 @@
+.about-section {
+  padding: 2rem 0;
+}
+
+.about-content {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about-content.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.about-img-container {
+  flex: 1 1 320px;
+  text-align: center;
+}
+
+.about-img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.about-info {
+  flex: 1 1 420px;
+}
+
+.about-info h2 {
+  margin-bottom: 0.5rem;
+}
+
+.about-info p {
+  margin-bottom: 0.5rem;
+  color: #444;
+}
+
+.about-info ul {
+  margin-top: 0.5rem;
+}

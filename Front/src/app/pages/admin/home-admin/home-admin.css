@@ -1,0 +1,105 @@
+/* ===== Fondo Principal ===== */
+.home-admin-background {
+  background: linear-gradient(135deg, #f7e6eb 0%, #f8c6c8 50%, #eab1c6 100%);
+  overflow-x: hidden;
+}
+
+/* ===== Hero ===== */
+.home-admin-background h1 {
+  letter-spacing: 0.5px;
+}
+
+.animate-fade {
+  animation: fadeIn 1.2s ease forwards;
+}
+
+.animate-fade-delayed {
+  animation: fadeIn 1.6s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Tarjetas ===== */
+.admin-card {
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 6px 20px rgba(234, 177, 198, 0.25);
+  transition: all 0.3s ease;
+}
+
+.admin-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 8px 26px rgba(214, 51, 108, 0.25);
+}
+
+.admin-card-img {
+  height: 140px;
+  object-fit: cover;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+
+/* Make cards size to content (do not force equal heights) */
+.admin-card.h-100 {
+  height: auto !important;
+}
+
+.admin-card .card-body {
+  padding-bottom: 1rem;
+}
+
+/* Motivation bar fixed at bottom */
+.admin-motivation-bar {
+  position: relative; /* place at end of content */
+  width: 100%;
+  background: linear-gradient(90deg, rgba(239,230,251,0.98) 0%, rgba(246,239,255,0.98) 100%);
+  border-top: 1px solid rgba(0,0,0,0.06);
+  padding: 12px 18px;
+  text-align: center;
+  margin-top: 28px;
+}
+.admin-motivation-bar .text {
+  color: #6a2fbf;
+  font-weight: 600;
+}
+
+/* ===== Botones ===== */
+.btn-outline-danger {
+  border-width: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-outline-danger:hover {
+  background-color: #d6336c !important;
+  color: #fff !important;
+  border-color: #d6336c !important;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .home-admin-background {
+    padding-top: 120px;
+  }
+
+  .admin-card {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .admin-card-img {
+    height: 130px;
+  }
+
+  h1.display-5 {
+    font-size: 2rem;
+  }
+}

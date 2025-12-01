@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: style_and_beauty_api
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_PROFILES_ACTIVE: "prod"
+      DB_HOST: "db"
+      DB_PORT: "5432"
+      DB_NAME: "style"
+      DB_USER: "admin"
+      DB_PASS: "admin123"
+    depends_on:
+      - db
+    deploy:
+      replicas: 2
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: "512M"
+        reservations:
+          memory: "256M"
+
+  db:
+    image: postgres:15-alpine
+    container_name: postgres_devops
+    environment:
+      POSTGRES_DB: "style"
+      POSTGRES_USER: "admin"
+      POSTGRES_PASSWORD: "admin123"
+    ports:
+      - "5433:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:

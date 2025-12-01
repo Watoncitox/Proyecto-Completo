@@ -1,0 +1,8 @@
+.corte-container {
+    padding: 40px 0;
+}
+
+.corte-card img {
+    object-fit: cover;
+    border-radius: 14px;
+}

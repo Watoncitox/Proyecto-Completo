@@ -1,0 +1,9 @@
+.clientes-page .table td,
+.clientes-page .table th {
+  vertical-align: middle;
+}
+
+.clientes-page h2 {
+  font-weight: 600;
+}
+

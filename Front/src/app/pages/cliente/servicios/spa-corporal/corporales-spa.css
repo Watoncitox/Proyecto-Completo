@@ -1,0 +1,8 @@
+.corporales-container {
+    padding: 40px 0;
+}
+
+.corporales-card img {
+    object-fit: cover;
+    border-radius: 14px;
+}
