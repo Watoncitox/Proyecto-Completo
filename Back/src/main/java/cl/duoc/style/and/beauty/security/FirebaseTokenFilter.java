@@ -52,12 +52,14 @@ public class FirebaseTokenFilter extends OncePerRequestFilter {
                     new SimpleGrantedAuthority("ROLE_" + usuario.getRol().toUpperCase());
 
             UsernamePasswordAuthenticationToken auth =
-                    new UsernamePasswordAuthenticationToken(uid, null, List.of(authority));
+                    new UsernamePasswordAuthenticationToken(usuario, null, List.of(authority));
 
             SecurityContextHolder.getContext().setAuthentication(auth);
 
         } catch (Exception ex) {
             System.out.println("Error validando token Firebase: " + ex.getMessage());
+            response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
+            return;
         }
 
         filterChain.doFilter(request, response);

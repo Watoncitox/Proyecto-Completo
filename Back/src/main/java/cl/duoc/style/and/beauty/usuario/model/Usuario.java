@@ -14,10 +14,10 @@ public class Usuario {
     @Column(name = "ID_USUARIO")
     private Long id;
 
-    @Column(name = "UID", nullable = false, unique = true)
+    @Column(name = "USER_UID", nullable = false, unique = true)
     private String uid;
 
-    @Column(name = "EMAIL", nullable = false)
+    @Column(name = "CORREO", nullable = false)
     private String correo;
 
     @Column(name = "NOMBRE", nullable = false)

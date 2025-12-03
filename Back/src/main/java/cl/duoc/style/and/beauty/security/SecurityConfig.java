@@ -24,6 +24,8 @@ public class SecurityConfig {
                 .authorizeHttpRequests(auth -> auth
                         // PUBLICO (login, registro, etc)
                         .requestMatchers("/auth/**").permitAll()
+                        // Permitir endpoints API para pruebas locales (Postman)
+                        .requestMatchers("/api/**").permitAll()
 
                         // RUTAS POR ROL
                         .requestMatchers("/admin/**").hasRole("ADMIN")
